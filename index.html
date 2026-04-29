@@ -66,17 +66,17 @@ nav a:hover{color:var(--navy)}
 .btn-line:hover{border-color:var(--gold);color:var(--gold)}
 
 /* hero right — cream panel with metrics */
-.hero-right{background:var(--cream);border-left:1px solid var(--border);padding:70px 6% 70px 5%;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2}
+.hero-right{background:var(--cream);border-left:1px solid var(--border);padding:70px 5% 70px 5%;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2}
 .hero-right::before{content:'';position:absolute;top:0;left:0;width:2px;height:100%;background:linear-gradient(180deg,transparent,var(--gold-border) 30%,var(--gold-border) 70%,transparent)}
-.metrics-lbl{font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:32px}
-.metrics{display:flex;flex-direction:column}
-.met{display:flex;align-items:flex-start;justify-content:space-between;padding:26px 0;border-top:1px solid var(--border-lt)}
+.metrics-lbl{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:28px}
+.metrics{display:flex;flex-direction:column;gap:0}
+.met{display:flex;align-items:center;gap:18px;padding:20px 0;border-top:1px solid var(--border-lt)}
 .met:last-child{border-bottom:1px solid var(--border-lt)}
-.met-n{font-family:'Cormorant',serif;font-size:3.4rem;font-weight:300;color:var(--navy);line-height:1;letter-spacing:-.02em}
-.met-n em{font-style:normal;font-size:1.5rem;color:var(--gold)}
-.met-info{text-align:right}
-.met-title{font-size:.88rem;font-weight:600;color:var(--navy);margin-bottom:4px}
-.met-desc{font-size:.74rem;color:var(--muted);line-height:1.5;max-width:170px;text-align:right;font-weight:300}
+.met-n{font-family:'Cormorant',serif;font-size:2.4rem;font-weight:300;color:var(--navy);line-height:1;letter-spacing:-.02em;min-width:80px;flex-shrink:0}
+.met-n em{font-style:normal;font-size:1.1rem;color:var(--gold)}
+.met-info{text-align:left}
+.met-title{font-size:.82rem;font-weight:600;color:var(--navy);margin-bottom:2px}
+.met-desc{font-size:.72rem;color:var(--muted);line-height:1.45;font-weight:300}
 .hero-cert{margin-top:32px;padding-top:24px;border-top:1px solid var(--border-lt);display:flex;align-items:center;gap:10px}
 .cert-dot{width:5px;height:5px;background:var(--gold);border-radius:50%}
 .cert-txt{font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);opacity:.8}
@@ -115,7 +115,7 @@ h2 i{font-style:italic;color:var(--gold)}
 .svc-n{font-family:'DM Mono',monospace;font-size:.68rem;color:var(--muted);padding-top:3px}
 .svc-name{font-family:'Cormorant',serif;font-size:1.18rem;font-weight:500;color:var(--navy);padding-top:1px}
 .svc-desc{font-size:.83rem;color:var(--body);line-height:1.72;font-weight:300}
-.svc-pill{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold-border);padding:5px 10px;white-space:nowrap;justify-self:end;align-self:start;margin-top:4px}
+.svc-pill{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);background:var(--gold);padding:6px 14px;white-space:nowrap;justify-self:end;align-self:start;margin-top:4px;font-weight:600}
 
 /* PROCESS — navy bg */
 .proc-grid{display:grid;grid-template-columns:repeat(4,1fr);border-left:1px solid rgba(255,255,255,.07)}
@@ -285,8 +285,8 @@ footer p{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.07em;c
     </a>
     <ul>
       <li><a href="#services">Services</a></li>
-      <li><a href="#process">Process</a></li>
       <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#process">Process</a></li>
       <li><a href="#order">Submit</a></li>
       <li><a href="#contact" class="nav-cta">Contact</a></li>
     </ul>
@@ -305,7 +305,7 @@ footer p{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.07em;c
     <p class="hero-sub">Precision translations for clinical, regulatory, and research documents — delivered by specialists with real medical expertise across 40+ languages.</p>
     <div class="hero-btns">
       <a href="#order" class="btn-navy">Get a Quote →</a>
-      <a href="#pricing" class="btn-line">View Pricing</a>
+      <a href="#pricing" class="btn-line">View Pricing →</a>
     </div>
   </div>
   <div class="hero-right">
@@ -336,19 +336,6 @@ footer p{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.07em;c
     <div class="svc-row rv"><span class="svc-n">04</span><span class="svc-name">Pharmaceutical Documents</span><span class="svc-desc">Drug inserts, dosage instructions, safety data sheets, and product monographs in any language pair.</span><span class="svc-pill">Included</span></div>
     <div class="svc-row rv"><span class="svc-n">05</span><span class="svc-name">Consent &amp; Legal Forms</span><span class="svc-desc">Patient consent forms, medical power of attorney, and legal-medical correspondence — certified accurate.</span><span class="svc-pill">Included</span></div>
     <div class="svc-row rv"><span class="svc-n">06</span><span class="svc-name">Insurance &amp; Billing</span><span class="svc-desc">Medical claims, billing statements, and prior authorization paperwork across all jurisdictions.</span><span class="svc-pill">Included</span></div>
-  </div>
-</section>
-
-<!-- PROCESS -->
-<section class="sec-navy" id="process">
-  <div class="s-ey"><div class="s-ln" style="background:rgba(184,146,42,.45)"></div><span class="s-tg" style="color:rgba(255,255,255,.35)">How It Works</span></div>
-  <h2 style="color:white">From submission to <i>certified delivery</i></h2>
-  <p class="s-bd" style="color:rgba(255,255,255,.45)">A rigorous four-step process ensures accuracy, security, and speed on every document we handle.</p>
-  <div class="proc-grid">
-    <div class="proc-cell rv"><span class="proc-n">Step 01</span><h3>Secure Upload</h3><p>Submit through our encrypted portal. PDF, Word, and scanned files accepted up to 50MB.</p></div>
-    <div class="proc-cell rv"><span class="proc-n">Step 02</span><h3>Specialist Assignment</h3><p>Matched to a translator holding a clinical degree in the relevant medical speciality.</p></div>
-    <div class="proc-cell rv"><span class="proc-n">Step 03</span><h3>Dual Review</h3><p>A second certified specialist independently verifies every translation before delivery.</p></div>
-    <div class="proc-cell rv"><span class="proc-n">Step 04</span><h3>Certified Delivery</h3><p>Your translation arrives within 24–72 hours, certified and ready for clinical or regulatory use.</p></div>
   </div>
 </section>
 
@@ -420,6 +407,20 @@ footer p{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.07em;c
   </div>
 </section>
 
+
+<!-- PROCESS -->
+<section class="sec-navy" id="process">
+  <div class="s-ey"><div class="s-ln" style="background:rgba(184,146,42,.45)"></div><span class="s-tg" style="color:rgba(255,255,255,.35)">How It Works</span></div>
+  <h2 style="color:white">From submission to <i>certified delivery</i></h2>
+  <p class="s-bd" style="color:rgba(255,255,255,.45)">A rigorous four-step process ensures accuracy, security, and speed on every document we handle.</p>
+  <div class="proc-grid">
+    <div class="proc-cell rv"><span class="proc-n">Step 01</span><h3>Secure Upload</h3><p>Submit through our encrypted portal. PDF, Word, and scanned files accepted up to 50MB.</p></div>
+    <div class="proc-cell rv"><span class="proc-n">Step 02</span><h3>Specialist Assignment</h3><p>Matched to a translator holding a clinical degree in the relevant medical speciality.</p></div>
+    <div class="proc-cell rv"><span class="proc-n">Step 03</span><h3>Dual Review</h3><p>A second certified specialist independently verifies every translation before delivery.</p></div>
+    <div class="proc-cell rv"><span class="proc-n">Step 04</span><h3>Certified Delivery</h3><p>Your translation arrives within 24–72 hours, certified and ready for clinical or regulatory use.</p></div>
+  </div>
+</section>
+
 <!-- TRUST -->
 <div class="trust-band"><div class="trust-row">
   <div class="tc"><span class="tc-n">01</span><h4>HIPAA Compliant</h4><p>Full data privacy and security on every document</p></div>
@@ -438,19 +439,19 @@ footer p{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.07em;c
       <h3>Simple, fast quote request</h3>
       <p>Annual subscribers get priority turnaround with no per-document charge. New here? Fill in your document details and we'll come back to you with a quote within 2 hours.</p>
       <div class="ord-meta">
-        <div class="om rv"><span class="om-dot"></span><div><h4>256-bit Encrypted Transfer</h4><p>All documents encrypted in transit and at rest.</p></div></div>
-        <div class="om rv"><span class="om-dot"></span><div><h4>2-Hour Response Guarantee</h4><p>We confirm receipt and begin assignment immediately.</p></div></div>
-        <div class="om rv"><span class="om-dot"></span><div><h4>Certified on Delivery</h4><p>Every translation ships with a certification of accuracy.</p></div></div>
+        <div class="om rv"><span class="om-dot"></span><div><h4>No File Upload Needed</h4><p>Just tell us about your document — word count, pages, and language pair.</p></div></div>
+        <div class="om rv"><span class="om-dot"></span><div><h4>Quote Within 2 Hours</h4><p>We review your details and reply with a clear, transparent price.</p></div></div>
+        <div class="om rv"><span class="om-dot"></span><div><h4>Certified on Delivery</h4><p>Every translation ships with a certified accuracy stamp.</p></div></div>
       </div>
     </div>
     <div class="ord-form rv">
-      <div class="of-hd"><div class="of-tag">Get a Quote</div><h4>Tell us about your document and we'll get started</h4></div>
-      <div class="dz2" onclick="document.getElementById('ofi').click()"><div class="dz-i">📎</div><h4>Tell us about your document</h4><p>PDF, DOCX, JPG, PNG — max 50 MB</p><div class="fn" id="ofn"></div></div>
-      <div class="fg2"><div class="fi"><label>Full Name</label><input type="text" placeholder="Dr. Jane Smith"></div><div class="fi"><label>Email</label><input type="email" placeholder="jane@clinic.com"></div></div>
-      <div class="fg2 one"><div class="fi"><label>Organization</label><input type="text" placeholder="City Medical Center"></div></div>
-      <div class="fg2"><div class="fi"><label>Source Language</label><select><option>English</option><option>Spanish</option><option>French</option><option>German</option><option>Portuguese</option><option>Arabic</option><option>Mandarin</option><option>Other</option></select></div><div class="fi"><label>Target Language</label><select><option>Spanish</option><option>English</option><option>French</option><option>German</option><option>Portuguese</option><option>Arabic</option><option>Mandarin</option><option>Other</option></select></div></div>
-      <div class="fg2"><div class="fi"><label>Document Type</label><select><option>Patient Records / Discharge Summary</option><option>Clinical Trial Document</option><option>Regulatory Filing</option><option>Pharmaceutical Document</option><option>Consent / Legal Form</option><option>Insurance / Billing</option><option>Other</option></select></div><div class="fi"><label>Turnaround</label><select><option>Standard (48 hours)</option><option>Rush (Same day)</option></select></div></div>
-      <div class="fg2 one"><div class="fi"><label>Additional Notes</label><textarea placeholder="Specific terminology, formatting requirements, or other context..."></textarea></div></div>
+      <div class="of-hd"><div class="of-tag">Get a Quote</div><h4>Tell us about your document and we'll get back to you within 2 hours</h4></div>
+      <div class="fg2"><div class="fi"><label>Full Name</label><input type="text" id="o_name" placeholder="Dr. Jane Smith"></div><div class="fi"><label>Email Address</label><input type="email" id="o_email" placeholder="jane@clinic.com"></div></div>
+      <div class="fg2"><div class="fi"><label>Organization</label><input type="text" id="o_org" placeholder="City Medical Center"></div><div class="fi"><label>Document Type</label><select id="o_type"><option>Patient Records / Discharge Summary</option><option>Clinical Trial Document</option><option>Regulatory Filing</option><option>Pharmaceutical Document</option><option>Consent / Legal Form</option><option>Insurance / Billing</option><option>Other</option></select></div></div>
+      <div class="fg2"><div class="fi"><label>Source Language</label><select id="o_src"><option>English</option><option>Spanish</option><option>French</option><option>German</option><option>Portuguese</option><option>Arabic</option><option>Mandarin</option><option>Other</option></select></div><div class="fi"><label>Target Language</label><select id="o_tgt"><option>Spanish</option><option>English</option><option>French</option><option>German</option><option>Portuguese</option><option>Arabic</option><option>Mandarin</option><option>Other</option></select></div></div>
+      <div class="fg2"><div class="fi"><label>Estimated Word Count</label><input type="number" id="o_words" placeholder="e.g. 1,500"></div><div class="fi"><label>Number of Pages</label><input type="number" id="o_pages" placeholder="e.g. 6"></div></div>
+      <div class="fg2"><div class="fi"><label>Turnaround Needed</label><select id="o_turn"><option>Standard (3–5 days)</option><option>Express (48 hours)</option><option>Rush (Same day)</option></select></div><div class="fi"><label>Medical Speciality</label><select id="o_spec"><option>General Medicine</option><option>Oncology</option><option>Cardiology</option><option>Neurology</option><option>Paediatrics</option><option>Psychiatry</option><option>Surgery</option><option>Pharmacology</option><option>Other</option></select></div></div>
+      <div class="fg2 one"><div class="fi"><label>Additional Notes</label><textarea id="o_notes" placeholder="Any specific terminology, formatting requirements, or context..."></textarea></div></div>
       <div class="of-foot"><span class="of-note">Annual subscribers — <strong>no charge per document</strong></span><button class="btn-navy" onclick="submitDoc()">Get in Touch →</button></div>
     </div>
   </div>
@@ -526,7 +527,37 @@ function reqQuote() {
   window.open('mailto:' + e + '?subject=' + subject + '&body=' + body);
   toast("Quote request sent — we'll get back to you within 2 hours");
 }
-function submitDoc()    {toast("Document received — we'll be in touch within 2 hours")}
+function submitDoc() {
+  const e = [72,101,108,108,111,64,109,101,100,108,101,116,116,101,114,46,97,112,112].map(c=>String.fromCharCode(c)).join('');
+  const name  = document.getElementById('o_name')?.value || '';
+  const email2= document.getElementById('o_email')?.value || '';
+  const org   = document.getElementById('o_org')?.value || '';
+  const dtype = document.getElementById('o_type')?.value || '';
+  const src   = document.getElementById('o_src')?.value || '';
+  const tgt   = document.getElementById('o_tgt')?.value || '';
+  const words = document.getElementById('o_words')?.value || 'Not specified';
+  const pages = document.getElementById('o_pages')?.value || 'Not specified';
+  const turn  = document.getElementById('o_turn')?.value || '';
+  const spec  = document.getElementById('o_spec')?.value || '';
+  const notes = document.getElementById('o_notes')?.value || '';
+  if(!name || !email2) { toast('Please fill in your name and email first'); return; }
+  const subject = encodeURIComponent('LinguaMedics Quote Request — ' + name);
+  const body = encodeURIComponent(
+    'NAME: ' + name +
+    '\nEMAIL: ' + email2 +
+    '\nORGANIZATION: ' + org +
+    '\n\nDOCUMENT TYPE: ' + dtype +
+    '\nMEDICAL SPECIALITY: ' + spec +
+    '\nSOURCE LANGUAGE: ' + src +
+    '\nTARGET LANGUAGE: ' + tgt +
+    '\nWORD COUNT: ' + words +
+    '\nPAGES: ' + pages +
+    '\nTURNAROUND: ' + turn +
+    '\n\nNOTES: ' + notes
+  );
+  window.open('mailto:' + e + '?subject=' + subject + '&body=' + body);
+  toast("Your email app will open — please hit send and we\'ll be in touch within 2 hours!");
+}
 function submitContact() {
   const e = [72,101,108,108,111,64,109,101,100,108,101,116,116,101,114,46,97,112,112].map(c=>String.fromCharCode(c)).join('');
   const rows = document.querySelectorAll('.con-form input, .con-form textarea');
